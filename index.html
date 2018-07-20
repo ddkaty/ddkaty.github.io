@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  
+  
+  <title>  hexo-theme-nayo </title>
+
+ 
+  
+    <link rel="icon" href="/images/favicon.png">
+  
+
+
+  <link rel="stylesheet" href="/nayo.min.css"> 
+</head>  
+  <body>   
+    
+      <header class="header">
+	
+  <nav class="header-nav">        
+   
+    <span class="iconfont icon-menu mobile-toggle"></span>   	
+
+    <div class="header-menu">          
+              
+            
+
+              <a class="header-menu-link" id="header-menu-home" href="/">Home</a>     
+
+            
+            
+            
+
+              <a class="header-menu-link" id="header-menu-archives" href="/archives">Archives</a>     
+
+            
+            
+            
+
+              <a class="header-menu-link" id="header-menu-tags" href="/tags">Tags</a>     
+
+            
+            
+            
+
+              <a class="header-menu-link" id="header-menu-about" href="/about">About</a>     
+
+            
+            
+            
+
+              <a class="iconfont icon-menu-search header-menu-link" id="header-menu-search"></a>
+
+            
+                
+    </div>  
+    
+  </nav>
+</header>   
+
+      <div class="container">       
+          
+          
+            <section class="main">  
+          
+
+          
+
+
+
+
+<div class="profile sildeUpMin">
+	
+		<a href="/">
+			<img class="avatar" src="/images/header.jpg">
+		</a>
+		<p class="author">一分实验室</p>
+		
+		<div class="social">
+   		      		
+			<a target="_blank" class="social-links" href="https://github.com/Lemonreds/hexo-theme-nayo">		
+				<i class="iconfont icon-Github"></i>
+			</a>	
+	          		
+			<a target="_blank" class="social-links" href="">		
+				<i class="iconfont icon-Weibo"></i>
+			</a>	
+	          		
+			<a target="_blank" class="social-links" href="">		
+				<i class="iconfont icon-Facebook"></i>
+			</a>	
+	          		
+			<a target="_blank" class="social-links" href="">		
+				<i class="iconfont icon-Twitter"></i>
+			</a>	
+	          		
+			<a target="_blank" class="social-links" href="">		
+				<i class="iconfont icon-Instagram"></i>
+			</a>	
+	          		
+			<a target="_blank" class="social-links" href="">		
+				<i class="iconfont icon-LinkedIn"></i>
+			</a>	
+	    
+    	</div>		
+</div>
+
+
+    	  	
+  		
+    			
+
+<article class="article">		
+	   
+	<div class="article-header">
+	    
+		<a class="article-title" href="/2018/07/19/About-me/">About me</a>  
+	       
+		 
+
+		<div class="article-meta">
+			Jul 19, 2018
+			
+		</div>
+	</div>
+
+
+	
+
+    
+	<div class="article-excerpt">	
+		 
+			
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2018/07/19/About-me/">Continue</a> 	
+	</div>	
+    
+</article>     
+     	
+    	  	
+  		
+    			
+
+<article class="article">		
+	   
+	<div class="article-header">
+	    
+		<a class="article-title" href="/2018/07/19/nginx/">Nginx配置</a>  
+	       
+		 
+
+		<div class="article-meta">
+			Jul 19, 2018
+			
+		</div>
+	</div>
+
+
+	
+
+    
+	<div class="article-excerpt">	
+		 
+			<h4 id="一、支持SSL"><a href="#一、支持SSL" class="headerlink" title="一、支持SSL"></a>一、支持SSL</h4><h5 id="1-查看现有编译选项"><a href="#1-查看现有编译选项" class="headerlink" title="1. 查看现有编译选项"></a>1. 查看现有编译选项</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># /usr/local/nginx/sbin/nginx -V</span><br><span class="line">nginx version: nginx/1.13.6</span><br><span class="line">built by gcc 4.4.7 20120313 (Red Hat 4.4.7-18) (GCC) </span><br><span class="line">configure arguments: --with-openssl=/usr/include/openssl/</span><br></pre></td></tr></table></figure>
+<h5 id="2-编译选项"><a href="#2-编译选项" class="headerlink" title="2. 编译选项"></a>2. 编译选项</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># cd /root/nginx-1.13.6/objs/nginx /usr/local/nginx/sbin/nginx</span><br><span class="line"># ./configure --with-http_ssl_module  --with-http_sub_module --with-http_stub_status_module</span><br></pre></td></tr></table></figure>
+<h5 id="3-验证"><a href="#3-验证" class="headerlink" title="3. 验证"></a>3. 验证</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">[root@gameweb objs]# ./nginx  -V</span><br><span class="line">nginx version: nginx/1.13.6</span><br><span class="line">built by gcc 4.4.7 20120313 (Red Hat 4.4.7-18) (GCC) </span><br><span class="line">built with OpenSSL 1.0.1e-fips 11 Feb 2013</span><br><span class="line">TLS SNI support enabled</span><br><span class="line">configure arguments: --with-http_ssl_module</span><br><span class="line"></span><br><span class="line">[root@gameweb objs]# ldd ./nginx</span><br><span class="line">	linux-vdso.so.1 =&gt;  (0x00007ffeb777b000)</span><br><span class="line">	libdl.so.2 =&gt; /lib64/libdl.so.2 (0x00007f25accf3000)</span><br><span class="line">	libpthread.so.0 =&gt; /lib64/libpthread.so.0 (0x00007f25acad6000)</span><br><span class="line">	libcrypt.so.1 =&gt; /lib64/libcrypt.so.1 (0x00007f25ac89e000)</span><br><span class="line">	libpcre.so.0 =&gt; /lib64/libpcre.so.0 (0x00007f25ac671000)</span><br><span class="line">	libssl.so.10 =&gt; /usr/lib64/libssl.so.10 (0x00007f25ac405000)</span><br><span class="line">	libcrypto.so.10 =&gt; /usr/lib64/libcrypto.so.10 (0x00007f25ac01f000)</span><br><span class="line">	libz.so.1 =&gt; /lib64/libz.so.1 (0x00007f25abe09000)</span><br><span class="line">	libc.so.6 =&gt; /lib64/libc.so.6 (0x00007f25aba75000)</span><br><span class="line">	/lib64/ld-linux-x86-64.so.2 (0x00007f25aceff000)</span><br><span class="line">	libfreebl3.so =&gt; /lib64/libfreebl3.so (0x00007f25ab871000)</span><br><span class="line">	libgssapi_krb5.so.2 =&gt; /lib64/libgssapi_krb5.so.2 (0x00007f25ab62d000)</span><br><span class="line">	libkrb5.so.3 =&gt; /lib64/libkrb5.so.3 (0x00007f25ab346000)</span><br><span class="line">	libcom_err.so.2 =&gt; /lib64/libcom_err.so.2 (0x00007f25ab141000)</span><br><span class="line">	libk5crypto.so.3 =&gt; /lib64/libk5crypto.so.3 (0x00007f25aaf15000)</span><br><span class="line">	libkrb5support.so.0 =&gt; /lib64/libkrb5support.so.0 (0x00007f25aad0a000)</span><br><span class="line">	libkeyutils.so.1 =&gt; /lib64/libkeyutils.so.1 (0x00007f25aab06000)</span><br><span class="line">	libresolv.so.2 =&gt; /lib64/libresolv.so.2 (0x00007f25aa8ec000)</span><br><span class="line">	libselinux.so.1 =&gt; /lib64/libselinux.so.1 (0x00007f25aa6cd000)</span><br></pre></td></tr></table></figure>
+<h5 id="4-替换重启nginx二进制"><a href="#4-替换重启nginx二进制" class="headerlink" title="4. 替换重启nginx二进制"></a>4. 替换重启nginx二进制</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@gameweb objs]# mv /usr/local/nginx/sbin/nginx /usr/local/nginx/sbin/nginx.bak</span><br><span class="line">[root@gameweb objs]# cp /root/nginx-1.13.6/objs/nginx /usr/local/nginx/sbin/nginx</span><br></pre></td></tr></table></figure>
+<h4 id="二、监控Ningx状态"><a href="#二、监控Ningx状态" class="headerlink" title="二、监控Ningx状态"></a>二、监控Ningx状态</h4><h6 id="1-启用"><a href="#1-启用" class="headerlink" title="1. 启用"></a>1. 启用</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 启用前需要--with-http_sub_module开启</span><br><span class="line">location /nginx_status &#123;</span><br><span class="line">stub_status on;</span><br><span class="line">access_lg off;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="2-重新加载"><a href="#2-重新加载" class="headerlink" title="2. 重新加载"></a>2. 重新加载</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s reload</span><br></pre></td></tr></table></figure>
+<h6 id="3-获取状态"><a href="#3-获取状态" class="headerlink" title="3. 获取状态"></a>3. 获取状态</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">curl http://127.0.0.1/ngx_status</span><br><span class="line">Active connections: 11921</span><br><span class="line">server accepts handled requests</span><br><span class="line">11989 11989 11991</span><br><span class="line">Reading: 0 Writing: 7 Waiting: 42</span><br></pre></td></tr></table></figure>
+<h6 id="4-状态解说"><a href="#4-状态解说" class="headerlink" title="4. 状态解说"></a>4. 状态解说</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">active connections – 活跃的连接数量</span><br><span class="line">server accepts handled requests — 总共处理了11989个连接 , 成功创建11989次握手, 总共处理了11991个请求</span><br><span class="line">reading — 读取客户端的连接数.</span><br><span class="line">writing — 响应数据到客户端的数量</span><br><span class="line">waiting — 开启 keep-alive 的情况下,这个值等于 active – (reading+writing), 意思就是 Nginx 已经处理完正在等候下一次请求指令的驻留连接.</span><br></pre></td></tr></table></figure>
+
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2018/07/19/nginx/">Continue</a> 	
+	</div>	
+    
+</article>     
+     	
+    	  	
+  		
+    			
+
+<article class="article">		
+	   
+	<div class="article-header">
+	    
+		<a class="article-title" href="/2018/07/19/hello-world/">Hello World</a>  
+	       
+		 
+
+		<div class="article-meta">
+			Jul 19, 2018
+			
+		</div>
+	</div>
+
+
+	
+
+    
+	<div class="article-excerpt">	
+		 
+			<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2018/07/19/hello-world/">Continue</a> 	
+	</div>	
+    
+</article>     
+     	
+
+
+
+
+          </section> 
+      </div>            
+    
+    <a id="backTop">
+      <span>
+        <i class="iconfont icon-backtotop"></i>
+      </span>
+    </a> 
+
+  
+    
+    <div class="search-container sildeUpMin">
+        <div class="search-header">
+            <input type="text" placeholder="Typing Something here." id="search-input" class="search-input">  
+            <span class="search-cancel iconfont icon-cancel"></span>
+        </div>
+        <div id="search-result" class="search-result"></div>
+    </div>
+ 
+     <div class="mobile-menu">      
+
+      
+      <img class="mobile-menu-icon" src="/images/favicon.png">   
+      
+
+         
+            
+
+            <a class="mobile-menu-link" href="/">Home
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/archives">Archives
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/tags">Tags
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/about">About
+            </a>
+            
+         
+                          
+
+            <a class="mobile-menu-link mobile-menu-search" href="#">Search </a>                 
+            
+         
+      
+</div>        
+    
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?636802045446222199ae541e32c8133e"; 
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+
+     
+    
+
+
+
+
+<footer id="footer">	    
+
+		
+		<div class="footer-copyright">
+		&copy;
+				
+		2017-
+		
+		2018		
+	
+		Lemon
+		<br>
+
+		Theme By
+		<a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a>	
+		</div>			
+	 
+</footer>   
+
+  
+
+    <script src="/nayo.bundle.js"></script>           
+  </body>        
+</html>
